@@ -26,7 +26,7 @@ body {
 
 /* Cabeçalho */
 .header {
-  background-color:blue;
+  background-color:#0056b3;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -49,10 +49,11 @@ body {
 }
 
 .cards-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Estilo do Card Individual */
@@ -63,7 +64,7 @@ body {
   width: 100%;
   max-width: 350px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
 }
@@ -103,6 +104,28 @@ body {
   font-weight: bold;
   color: #777;
   margin-top: auto;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form h2 {
+  font-size: 32px;
+}
+
+.form label {
+  font-size: 20px;
 }
 
 /* Rodapé */
