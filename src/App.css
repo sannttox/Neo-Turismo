@@ -11,6 +11,13 @@ body {
   color: #333;
 }
 
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -19,8 +26,7 @@ body {
 
 /* Cabeçalho */
 .header {
-  background-color: #0056b3;
-  color: white;
+  background-color:blue;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -28,21 +34,25 @@ body {
 .header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: white;
 }
 
+.header p {
+  font-size: 25px;
+  color: white;
+
+}
 /* Conteúdo Principal e Grid Flexbox */
 .main-content {
-  flex: 1;
-  padding: 2rem 1rem;
-  max-width: 1200px;
+  padding: 50px 20px; 
   margin: 0 auto;
 }
 
 .cards-grid {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
+  gap: 1.5px;
 }
 
 /* Estilo do Card Individual */
@@ -53,7 +63,7 @@ body {
   width: 100%;
   max-width: 350px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
 }
