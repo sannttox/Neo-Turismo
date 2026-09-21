@@ -12,8 +12,8 @@ body {
 }
 
 .header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 32px;
+  margin-bottom: 8px;
   color: white;
 }
 
@@ -27,13 +27,13 @@ body {
 /* Cabeçalho */
 .header {
   background-color:#0056b3;
-  padding: 2rem 1rem;
+  padding: 32px 16px;
   text-align: center;
 }
 
 .header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 32px;
+  margin-bottom: 8px;
   color: white;
 }
 
@@ -65,12 +65,8 @@ body {
   max-width: 350px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  transition: transform 0.2s ease-in-out;
-}
+  
 
-.card:hover {
-  transform: translateY(-5px);
 }
 
 .card-img {
@@ -80,30 +76,23 @@ body {
 }
 
 .card-body {
-  padding: 1.2rem;
+  padding: 19px;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 12px;
   flex: 1;
 }
 
 .card-body h2 {
-  font-size: 1.25rem;
+  font-size: 16px;
   color: #0056b3;
 }
 
 .card-body p {
-  font-size: 0.95rem;
+  font-size: 12px;
   line-height: 1.4;
   color: #555;
   text-align:justify;
-}
-
-.card-location {
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: #777;
-  margin-top: auto;
 }
 
 .form {
@@ -133,14 +122,14 @@ body {
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 10px;
+  margin-top: 2px;
 }
 
 /* Responsividade (Media Query para Telas Menores/Celulares) */
 @media (max-width: 768px) {
   .header h1 {
-    font-size: 1.5rem;
+    font-size: 15px;
   }
   
   .cards-grid {
