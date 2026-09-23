@@ -1,17 +1,35 @@
+<<<<<<< HEAD
 # Neo Turismo
+=======
+# Neo Turismo - 
+Sistema web para divulgação dos principais pontos turísticos de **Neópolis - SE**.
+>>>>>>> 7dd756d52b31f340535496b150dcd94390147e95
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto tem como objetivo facilitar o acesso a informações históricas, culturais e turísticas da cidade, contribuindo para o fortalecimento do turismo local e da valorização do patrimônio.
 
+<<<<<<< HEAD
 ## Como Executar o projeto
 
 - node.js instalado
 - npm ou yarn
+=======
+### pré-requisitos
+- Node.js instalado
+- npm ou yarn
 
-### `npm start`
+## Como rodar o projeto
+clone o repositório:
+ bash 
+git clone https://github.com/sannttox/Neo-Turismo
+>>>>>>> 7dd756d52b31f340535496b150dcd94390147e95
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ou na raiz do projeto execute 
+- npm install
+- npm start ou run
 
+Logo em seguida, clique na host http://localhost:3000.
+
+<<<<<<< HEAD
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
@@ -70,3 +88,6 @@ npm run ou start
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+ 
+>>>>>>> 7dd756d52b31f340535496b150dcd94390147e95
