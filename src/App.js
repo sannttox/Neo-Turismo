@@ -1,26 +1,26 @@
-import Header from './header.js';
-import Formulario from './forms.js';
+import Header from './componentes/header.js';
+import Formulario from './componentes/forms.js';
 import './App.css';
-
-import './App.css';
-
 
 function App() {
   return (
     <div className="container">
-      {/* Cabeçalho do Site */}
-      {/* <header className="header">
-        <h1>Pontos Turísticos de Neópolis - SE</h1>
-        <p>Conheça as belezas e tradições da Capital do Frevo Sergipano</p>
-      </header> */}
 
       <Header />
 
-
-
-      {/* Conteúdo Principal */}
       <main className="main-content">
 
+        <section className="about-section">
+          <div className="about-imagem">
+            <img src="/imagem/neopolis-central.jpeg" alt="neopolis-central" className="card-img" />
+          </div>
+          <div className="about-text">
+            <p>Neópolis é um destino turístico encantador localizado às margens do Rio São Francisco, no estado de Sergipe [SE]. A cidade oferece aos visitantes belas paisagens ribeirinhas, ótimas opções de passeios de barco e um fascinante patrimônio histórico preservado em suas ruas e casarões antigos.</p>
+            <p>Além da natureza exuberante do Velho Chico, o turismo na região se destaca pela deliciosa culinária baseada em peixes frescos e pelas festividades tradicionais muito animadas. É o lugar ideal para quem deseja relaxar, saborear a verdadeira comida nordestina e vivenciar a cultura local de perto.</p>
+          </div>
+        </section>
+
+       
         <section className="cards-grid">
 
           <div className="card">
@@ -42,29 +42,11 @@ function App() {
           </div>
 
           <div className="card">
-            <img src="/imagem/aracare.jpg" alt="Morro-aracare" className="card-img" />
-            <div className="card-body">
-              <h2>Morro do Esquiriguindim (Alto do Aracaré)</h2>
-              <p>É o ponto geográfico mais alto da zona urbana de Neópolis. Tornou-se um local de forte peregrinação e sincretismo religioso após a construção de uma escadaria com 100 degraus que leva os fiéis até o topo. Lá em cima, foi erguida uma estátua monumental em homenagem ao Padre Cícero, onde são realizadas missas campestres e orações</p>
-              <p className="card-location">📍localizacao: Morro do Aracaré, Neópolis - SE</p>
-            </div>
-          </div>
-
-          <div className="card">
             <img src="/imagem/balsas.jpeg" alt="Porto-balsas" className="card-img" />
             <div className="card-body">
               <h2>Porto das Balsas de Neópolis</h2>
               <p>O porto é o coração pulsante da economia ribeirinha tradicional local. A Orlinha foi reestruturada com calçadão, quiosques e restaurantes de culinária típica do "Velho Chico" (foco em peixes como a tilápia e o tucunaré). O local serve como ponto de embarque para as balsas que fazem a travessia diária de passageiros e veículos pelo Rio São Francisco até a cidade histórica de Penedo, em Alagoas.</p>
               <p className="card-location">📍localizacao: Margem do Rio São Francisco, Centro, Neópolis - SE</p>
-            </div>
-          </div>
-
-          <div className="card">
-            <img src="/imagem/aldeia.jpg" alt="Aldeia" className="card-img" />
-            <div className="card-body">
-              <h2>Aldeia Indígena Fulkaxó</h2>
-              <p>Ponto pouquíssimo conhecido e de altíssimo valor cultural. Trata-se da primeira reserva indígena oficial do estado de Sergipe, conquistada em definitivo após anos de demarcação e disputas fundiárias (antiga Fazenda Soloncy Moura, na divisa ecológica entre Neópolis e Pacatuba). A etnia Fulkaxó (descendentes dos Xocós) reside no local e preserva rituais ancestrais, cantos, danças tradicionais e produção artesanal única.</p>
-              <p className="card-location">📍localizacao:Limite geográfico rural entre Neópolis e Pacatuba - SE</p>
             </div>
           </div>
 
@@ -78,56 +60,57 @@ function App() {
           </div>
 
           <div className="card">
-            <img src="/imagem/sao-sebastiao.jpeg" alt="Sao-sebastiao" className="card-img" />
-            <div className="card-body">
-              <h2>Igreja de São Sebastião (Povoado Porteiras)</h2>
-              <p>Este é um verdadeiro tesouro escondido do patrimônio nacional. Construída originalmente no século XVIII, a singela e histórica Igrejinha de São Sebastião é tombada como sítio arqueológico pelo IPHAN (Instituto do Patrimônio Histórico e Artístico Nacional). Ela guarda vestígios do período colonial e funciona como um símbolo intocado da fé e da resistência das comunidades ribeirinhas do "Velho Chico".</p>
-             <p className="card-location">📍localizacao: Povoado Porteiras, Zona Rural, Neópolis - SE</p>
-            </div>
-          </div>
-
-          <div className="card">
             <img src="/imagem/oportinho.jpg" alt="o-portinho" className="card-img" />
             <div className="card-body">
               <h2>O Portinho</h2>
               <p>Diferente dos monumentos coloniais, O Portinho é um ponto turístico moderno com foco em turismo de lazer e gastronomia de praia fluvial. Localiza-se exatamente na margem sergipana do Rio São Francisco (na divisa entre Neópolis e Penedo). Funciona como um espaço rústico/sofisticado à beira-rio com bangalôs, mesas sob ombrelones, servindo petiscos regionais, caldinhos e bebidas geladas com uma atmosfera voltada para o descanso da família.</p>
-             <p className="card-location">📍localizacao: Margem do Rio São Francisco, Neópolis - SE</p>
+              <p className="card-location">📍localizacao: Margem do Rio São Francisco, Neópolis - SE</p>
             </div>
           </div>
 
         </section>
+        
+        <section className="categories-grid">
+          <div className="category-card">
+            <img src="/imagem/como-chegar.jpg" alt="Como Chegar" className="category-img" />
+            <div className="category-body">
+              <h2 className="category-title">Como Chegar</h2>
+              <button className="btn-saiba-mais">Saiba Mais</button>
+            </div>
+          </div>
 
+          <div className="category-card">
+            <img src="/imagem/onde-ir.jpg" alt="Onde Ir" className="category-img" />
+            <div className="category-body">
+              <h2 className="category-title">Onde Ir</h2>
+              <button className="btn-saiba-mais">Saiba Mais</button>
+            </div>
+          </div>
+
+          <div className="category-card">
+            <img src="/imagem/oque-fazer.jpg" alt="O que Fazer" className="category-img" />
+            <div className="category-body">
+              <h2 className="category-title">O que Fazer</h2>
+              <button className="btn-saiba-mais">Saiba Mais</button>
+            </div>
+          </div>
+
+          <div className="category-card">
+            <img src="/imagem/saiba-mais.jpg" alt="Ver Mais" className="category-img" />
+            <div className="category-body">
+              <h2 className="category-title">Ver Mais</h2>
+              <button className="btn-saiba-mais">Saiba Mais</button>
+            </div>
+          </div>
+        </section>
 
         <Formulario />
 
-        {/* <section className='form'>
-          <form action="">
-            <h2>Formulário</h2>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome"></input>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email"></input>
-
-            <label htmlfor="comentario">Comentário:</label>
-            <textarea
-            id="comentario"
-            name="comentario"
-            rows="4"
-            placeholder="Deixe seu comentário aqui"
-            ></textarea>
-
-            <button type="submit">Enviar</button>
-          </form>
-        </section> */}
-
       </main>
 
-
       <footer className="footer">
-        <p>© 2026 - NeoTurismo | Neópolis - Sergipe</p>
+        <p>NeoTurismo - 2026 | Neópolis - Sergipe</p>
       </footer>
-
 
     </div>
   );
